@@ -1,0 +1,172 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/*
+a[target="_blank"]:after {
+    content: " (ext)" ; 
+}
+*/
+
+tag {
+	color:orange;
+	margin-left:10px;"
+}
+
+li {
+  padding-bottom: 16px;
+}
+
+em{
+	color:rgb(69, 181, 209);
+}
+
+.float_div {
+    width:60%;
+    margin-left:10px;
+    float:right;
+}
+
+#narrow {
+  float: right;
+  width: 25%;
+  height: 100px;
+  background: lightblue;
+}
+#wide {
+  float: left;
+  width: 75%;
+  background: lightgreen;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 75%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.columna {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.column a	{
+	color:orange;
+	margin-left:10px;
+	}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.header {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 18px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+  width: 75%;
+  
+}
+
+
+.main a:link {
+	color: pink;
+	padding: 0px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+	
+.main a:visited {
+  color: pink;
+  padding: 0px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+	}
+
+.main a:hover {
+  background-color: red;
+	}
+	
+.main a:active {
+  background-color: red;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.image-cropper {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10%;
+}
+
+img {
+    display: inline;
+    margin: 10 10 10 10;
+    height: 100%;
+    width: auto;
+	object-fit: cover;
+}
+.centered {
+  position: absolute;
+  top: 90%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  color: #818181;
+}
