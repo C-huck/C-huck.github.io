@@ -21,6 +21,21 @@ em{
 	color:rgb(69, 181, 209);
 }
 
+ul#menu li {
+  display:inline;
+  padding: 10px;
+  padding-left:0px;
+}
+
+ul#menu {
+	background-image: linear-gradient(to right, orange , rgb(69, 181, 209));
+	width:max-content;
+}
+
+ul#inline li {
+	display:inline;
+}
+
 .float_div {
     width:60%;
     margin-left:10px;
@@ -113,7 +128,7 @@ em{
   margin-left: 160px; /* Same as the width of the sidenav */
   font-size: 18px; /* Increased text to enable scrolling */
   padding: 0px 10px;
-  width: 75%;
+  width: 50%;
   
 }
 
