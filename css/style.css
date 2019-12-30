@@ -105,7 +105,6 @@ ul#inline li {
   padding-top: 20px;
 }
 
-tresting
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
@@ -129,7 +128,7 @@ tresting
   margin-left: 160px; /* Same as the width of the sidenav */
   font-size: 18px; /* Increased text to enable scrolling */
   padding: 0px 10px;
-  width: 50%;
+  width: 65%;
   
 }
 
