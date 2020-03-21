@@ -163,11 +163,13 @@ ul#inline li {
 }
 
 .image-cropper {
-    width: 150px;
-    height: 150px;
+    width: auto;
+    height: 20%;
     position: relative;
     overflow: hidden;
-    border-radius: 10%;
+    border-radius: 20%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 img {
