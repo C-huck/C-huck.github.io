@@ -162,14 +162,6 @@ Bradley, C. (2009). A theoretical look at the Person Agreement Marker in German 
 <div class="main" id="Projects" style="width:90%">
 <h2>Current projects</h2>
 
-</div>
-
-<div class="main" id="Software" style="width:90%">
-<h2>Software</h2>
-
-<p>Click project names to expand/ collapse description. See my <a href="https://github.com/C-huck/" target="_blank">GitHub &#8599;</a> for source code. All are scripted in Python.
-	I contributed all conceptualization, planning and coding. </p>
-
 <p>
 
 <a href="#/" onclick="toggle_visibility('trans');"><em>Translucency/Transparency</em></a><tag >#sign language</tag> <tag>#experiment</tag> <tag>#NLP</tag> <tag>#basic inferential statistics</tag><br>
@@ -185,7 +177,36 @@ Bradley, C. (2009). A theoretical look at the Person Agreement Marker in German 
 		</div>
 	</div>
 
-</p><p>
+</p>
+
+<p>
+
+	<a href="#/" onclick="toggle_visibility('icon');"><em>ASL-LEX iconicity</em></a> <tag>#sign language</tag> <tag>#corpus</tag> <tag>#machine learning</tag> <tag>#(logistic) regression</tag> <br>
+	<div class = "row" id="icon" style="display:none;">
+		<div class = "column">
+	Is lexical category information apparent in the form of signs from American Sign Language (ASL)? This project correlates visual (iconic) features of ASL signs with lexical/ grammatical category information using corpus information downloaded from ASL-LEX.org [<a href="https://www.asl-lex.org" target="_blank"> link &#8599;</a> ]. Such features include whether the sign is two handed, the sign's handshape, and the movement of the sign. Features were percolated into an 8-fold leave-one-out cross-validation paradigm using a logistic regression classifier. Results indicate that visual features only weakly predict sign category membership.
+
+	<p> The project also considers lexical information, e.g., <i>Do verb signs exhibit greater handshape (phonological) neighborhood density than noun signs?</i> Classifier performance was worse trained on lexical features than on visual features. </p>
+
+	<p>This project contributes to our understanding of how visual or lexical information does or does not bootstrap language learning (here, learning the grammatical class of a sign) in the visual/ manual modality. However, the analysis suffers from a small, unbalanced dataset, whereas similar studies on spoken languages have exponentially more datapoints.</p>
+
+		</div>
+		<div class = "columna">
+
+		</div>
+	</div>
+
+</p>
+
+</div>
+
+<div class="main" id="Software" style="width:90%">
+<h2>Software</h2>
+
+<p>Click project names to expand/ collapse description. See my <a href="https://github.com/C-huck/" target="_blank">GitHub &#8599;</a> for source code. All are scripted in Python.
+	I contributed all conceptualization, planning and coding. </p>
+
+<p>
 
 	<a href="#/" onclick="toggle_visibility('elan');"><em>ELAN Overlap</em></a> <tag>#sign language</tag> <tag> #annotation</tag> <tag>#html/xml processing</tag> <br>
 	<div class = "row" id="elan" style="display:none;">
@@ -203,23 +224,6 @@ Bradley, C. (2009). A theoretical look at the Person Agreement Marker in German 
 
 </p><p>
 
-	<a href="#/" onclick="toggle_visibility('icon');"><em>ASL-LEX iconicity</em></a> <tag>#sign language</tag> <tag>#corpus</tag> <tag>#machine learning</tag> <tag>#(logistic) regression</tag> <br>
-	<div class = "row" id="icon" style="display:none;">
-		<div class = "column">
-	Is lexical category information apparent in the form of signs from American Sign Language (ASL)? This project correlates visual (iconic) features of ASL signs with lexical/ grammatical category information using corpus information downloaded from ASL-LEX.org [<a href="https://www.asl-lex.org" target="_blank"> link &#8599;</a> ]. Such features include whether the sign is two handed, the sign's handshape, and the movement of the sign. Features were percolated into an 8-fold leave-one-out cross-validation paradigm using a logistic regression classifier. Results indicate that visual features only weakly predict sign category membership.
-
-	<p> The project also considers lexical information, e.g., <i>Do verb signs exhibit greater handshape (phonological) neighborhood density than noun signs?</i> Classifier performance was worse trained on lexical features than on visual features. </p>
-
-	<p>This project contributes to our understanding of how visual or lexical information does or does not bootstrap language learning (here, learning the grammatical class of a sign) in the visual/ manual modality. However, the analysis suffers from a small, unbalanced dataset, whereas similar studies on spoken languages have exponentially more datapoints.</p>
-
-		</div>
-		<div class = "columna">
-
-		</div>
-	</div>
-
-</p><p>
-
 	<a href="#/" onclick="toggle_visibility('tracker');"><em>simple-tracker</em></a> <tag>#opencv #optical flow #computer vision</tag> <br>
 		<div class = "row" id="tracker" style="display:none;">
 		<div class = "column">
@@ -232,7 +236,8 @@ Bradley, C. (2009). A theoretical look at the Person Agreement Marker in German 
 
 		</div>
 		<div class = "columna">
-		<img src="images/out.gif" style="max-width: 100%; height: auto;"/>
+		<!--<img src="images/out.gif" style="max-width: 100%; height: auto;"/>-->
+		<video style="max-width: 100%; height: auto;" autoplay loop> <source src="images/jp_trace.webm" type="video/webm"> </video>
 		</div>
 	</div>
 
