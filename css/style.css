@@ -4,7 +4,7 @@ body {
 
 /*
 a[target="_blank"]:after {
-    content: " (ext)" ; 
+    content: " (ext)" ;
 }
 */
 
@@ -63,7 +63,7 @@ ul#inline li {
   float: left;
   width: 75%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  /*height: 300px;  Should be removed. Only for demonstration */
 }
 
 .columna {
@@ -129,7 +129,7 @@ ul#inline li {
   font-size: 18px; /* Increased text to enable scrolling */
   padding: 0px 10px;
   width: 65%;
-  
+
 }
 
 
@@ -140,7 +140,7 @@ ul#inline li {
 	text-decoration: none;
 	display: inline-block;
 }
-	
+
 .main a:visited {
   color: pink;
   padding: 0px 5px;
@@ -152,7 +152,7 @@ ul#inline li {
 .main a:hover {
   background-color: red;
 	}
-	
+
 .main a:active {
   background-color: red;
 }
