@@ -58,11 +58,18 @@ ul#inline li {
   box-sizing: border-box;
 }
 
+.justified {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 /* Create two equal columns that floats next to each other */
 .column {
   float: left;
   width: 75%;
   padding: 10px;
+  text-align: justify;
+  text-justify: inter-word;
   /*height: 300px;  Should be removed. Only for demonstration */
 }
 
@@ -70,7 +77,7 @@ ul#inline li {
   float: left;
   width: 25%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  /*height: 300px;  Should be removed. Only for demonstration */
 }
 
 .column a	{
@@ -90,6 +97,8 @@ ul#inline li {
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
   }
 }
 
