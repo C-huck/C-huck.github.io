@@ -173,12 +173,12 @@ ul#inline li {
 
 .image-cropper {
     width: auto;
-    height: 20%;
+    height: 25%;
     position: relative;
     overflow: hidden;
-    border-radius: 20%;
-	margin-left: auto;
-	margin-right: auto;
+    border-radius: 25%;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
 }
 
 img {
