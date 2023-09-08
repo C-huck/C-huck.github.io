@@ -41,12 +41,12 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   width: 960px;
 }
 .spoiler, .spoiler2, .spoiler a, .spoiler2 a{ 
-  color: black; 
-  background-color: black;
+  color: white; 
+  background-color: white;
 }
 
 .spoiler:hover, .spoiler:hover a {
-  color: white;
+  color: black;
 }
 
 .spoiler2:hover, .spoiler2:hover a { 
