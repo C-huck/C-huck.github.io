@@ -41,8 +41,8 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   width: 960px;
 }
 .spoiler, .spoiler2, .spoiler a, .spoiler2 a{ 
-  color: white; 
-  background-color: white;
+  color: gray; 
+  background-color: gray;
 }
 
 .spoiler:hover, .spoiler:hover a {
@@ -51,6 +51,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 .spoiler2:hover, .spoiler2:hover a { 
  background-color:white; 
+  color: black;
 }
 .w3-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
 .w3-table,.w3-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.w3-table-all{border:1px solid #ccc}
