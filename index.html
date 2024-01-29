@@ -63,7 +63,7 @@
 
 
     <div class="main">
-    <a href="#/" onclick="toggle_visibility('elan');"><h4>Would you like to know more?</h4></a>
+    <a href="#/" onclick="toggle_visibility('elan');">Would you like to know more? &#9660;</a>
 
 	<div id="elan" style="display:none;">
     <p class="justified">I was most recently a linguist and researcher at Lexicon Branding Inc., a world-leading brand strategy and brand naming agency in sunny Sausalito, California.
@@ -414,12 +414,15 @@ Bradley, C. (2009). A theoretical look at the Person Agreement Marker in German 
 
 <script type="text/javascript">
 <!--
-    function toggle_visibility(id) {
-       var e = document.getElementById(id);
-       if(e.style.display == 'block')
-          e.style.display = 'none';
-       else
-          e.style.display = 'block';
+    function toggle_visibility(id1,id2) {
+       var e = document.getElementById(id1);
+       var f = document.getElementById(id2);
+       if(e.style.display == 'block'){
+          e.style.display = 'none'
+          f.innerHTML = "Would you like to know more? &#9660;";}
+       else {
+          e.style.display = 'block'
+          f.innerHTML = "Would you like to know less? &#9650;";}
     }
 //-->
 </script>
