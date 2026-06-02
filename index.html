@@ -43,18 +43,17 @@
 
 
   
-<!--<div class="w3-content w3-padding" style="max-width:1564px">-->
-    <div class="w3-container w3-padding-32">
+<div class="w3-content w3-padding" style="max-width:1564px">
+    <div class="w3-container w3-padding-48">
 
       <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Chuck Bradley, PhD</b></span><!-- <span class="w3-hide-small w3-text-light-grey">Chuck</span>--></h1>
     <!--<h2 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Linguist & Researcher</b></span><span class="w3-hide-small w3-text-light-grey">Chuck</span></h2>-->
-    <h2 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Mixed-methods consumer researcher</b></span><!-- <span class="w3-hide-small w3-text-light-grey">Chuck</span>--></h2>
+    <h2 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min" id="header"><b>Mixed-methods consumer researcher</b></span><!-- <span class="w3-hide-small w3-text-light-grey">Chuck</span>--></h2>
 
   <!-- Project Section -->
 
-  <div class="w3-container w3-padding-32" id="portfolio">
+  <div class="w3-container w3-padding-32" id="portfolio">  </div>
     <!-- <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Portfolio</h3>-->
-  </div>
   <div class="w3-row-padding">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class='main'>
@@ -62,6 +61,7 @@
   </div>
 
 </div>
+    </div>
 
 <!--  <div class="w3-row-padding">
     <div class="w3-col l3 m6 w3-margin-bottom">
@@ -80,7 +80,6 @@
 
 
 <script type="text/javascript">
-<!--
     function toggle_visibility(id1,id2) {
        var e = document.getElementById(id1);
        var f = document.getElementById(id2);
@@ -91,7 +90,29 @@
           e.style.display = 'block'
           f.innerHTML = "Would you like to know less? &#9650;";}
     }
-//-->
+function getUrlParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) 
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) 
+        {
+            return sParameterName[1];
+        }
+    }
+}
+
+var header = getUrlParameter('a');
+
+if (header == '1') {
+  document.getElementById('header').innerHTML = 'Data Scientist';
+} else if (header == '2') {
+  document.getElementById('header').innerHTML = 'Mixed Methods Consumer Researcher';
+} else {  
+  document.getElementById('header').innerHTML = 'Data Science & Consumer Behavior';
+}
 </script>
 
 <!-- Footer -->
