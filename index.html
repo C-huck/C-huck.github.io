@@ -221,22 +221,50 @@ PORTFOLIO
 
   <div class="w3-row">
     <a href="javascript:void(0)" onclick="openCity(event, 'Udacity','orange');">
-      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding"><b style="color:black">Udacity</b><br>Product analytics, Time series, Segmentation, Social Listening</div>
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding" style="white-space: nowrap; overflow: hidden; text-overflow: elipsis;"><b style="color:black">Udacity</b><br>
+	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight1">Product analytics</div> 
+	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight1">Time series</div>
+	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight1">Segmentation</div>
+	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight1">Social Listening</div>
+	  </div>
     </a>
     <a href="javascript:void(0)" onclick="openCity(event, 'Intuit','orange');">
-      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding"><b style="color:black">Intuit / QuickBooks</b><br>Usability study, Microcopy evaluation, A/B Testing</div>
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding" style="white-space: nowrap; overflow: hidden; text-overflow: elipsis;"><b style="color:black">Intuit / QuickBooks</b><br>
+	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag">Usability study</div>
+	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag">Microcopy evaluation</div> 
+	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag">A/B Testing</div>
+	  </div>
     </a>
     <a href="javascript:void(0)" onclick="openCity(event, 'Microsoft','orange');">
-      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding"><b style="color:black">Microsoft</b><br>Concept testing, Usability study, Mixed methods</div>
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding" style="white-space: nowrap; overflow: hidden; text-overflow: elipsis;"><b style="color:black">Microsoft</b><br>
+	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag">Concept testing</div>
+	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag">Usability study</div>
+	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag">Feature prioritization</div>
+	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag">Mixed methods</div> 
+	  </div>
     </a>
 	<a href="javascript:void(0)" onclick="openCity(event, 'Lenovo','orange');">
-      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding"><b style="color:black">Lenovo</b><br>Message testing / refinement, Intl research, Mixed methods </div>
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding" style="white-space: nowrap; overflow: hidden; text-overflow: elipsis;"><b style="color:black">Lenovo</b><br><span>
+	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag">Message testing</div>
+	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag">Message refinement</div>
+	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag">Int'l research</div>
+	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag">Mixed methods</div> 
+	  </div>
     </a>
 	    <a href="javascript:void(0)" onclick="openCity(event, 'Meta','orange');">
-      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding"><b style="color:black">Meta</b><br>Naming study, Linguistic analysis, Intl research</div>
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding" style="white-space: nowrap; overflow: hidden; text-overflow: elipsis;"><b style="color:black">Meta</b><br>
+	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag">Naming study</div>
+	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag">Microcopy evaluation</div> 
+	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag">Linguistic analysis</div>
+	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag">Int'l research</div>
+	  </div>
     </a>
 	<a href="javascript:void(0)" onclick="openCity(event, 'Universal','orange');">
-    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding"><b style="color:black">Universal Destinations & Experiences</b><br>Softness, Guest Satisfaction, Data journalism </div>
+    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding" style="white-space: nowrap; overflow: hidden; text-overflow: elipsis;"><b style="color:black">Universal Destinations & Experiences</b><br>
+	<div class="w3-sand w3-round-xxlarge w3-small w3-tag">Softness </div>
+	<div class="w3-sand w3-round-xxlarge w3-small w3-tag">Guest Satisfaction </div>
+	<div class="w3-sand w3-round-xxlarge w3-small w3-tag">Data journalism </div>
+	</div>
     </a>
   </div>
   
@@ -1181,6 +1209,11 @@ var header = getUrlParameter('a');
 if (header == '1') {
   document.getElementById('header').innerHTML = 'Data Scientist';
   document.getElementById('tagline').innerHTML = 'a data scientist and behavioralist. I help people understand and act on data.';
+  const collection = document.getElementsByClassName("highlight1");
+	for (let i = 0; i < collection.length; i++) {
+	collection[i].classList.remove('w3-sand');
+	collection[i].classList.add('w3-blue');
+	}
 } else if (header == '2') {
   document.getElementById('header').innerHTML = 'Mixed Methods Consumer Researcher';
   document.getElementById('tagline').innerHTML = 'a mixed-methods consumer researcher. I help people understand and act on data.';
