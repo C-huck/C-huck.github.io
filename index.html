@@ -1385,7 +1385,10 @@ if (header == '1') {
 	collection[i].classList.remove('w3-sand');
 	collection[i].classList.add('w3-pale-blue');
 	}
-
+  const priority = document.getElementsByClassName("consumer");
+	for (let i = 0; i < priority.length; i++) {
+	collection[i].classList.add('a');
+	}
 } else if (header == '2') {
   document.getElementById('header').innerHTML = 'Mixed Methods Consumer Researcher';
   document.getElementById('tagline').innerHTML = 'a commercially oriented researcher combining qualitative research, quantitative methods, behavioral analytics, and advanced research science to help organizations understand what consumers need and what to do about it.';
