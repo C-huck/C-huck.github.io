@@ -1385,10 +1385,14 @@ if (header == '1') {
 	collection[i].classList.remove('w3-sand');
 	collection[i].classList.add('w3-pale-blue');
 	}
-  const priority = document.getElementsByClassName("Udacity Intuit");
-	for (let i = 0; i < priority.length; i++) {
-	priority[i].classList.add('a');
-	}
+  document.getElementsByClassName("Udacity").classList.add('a');
+	document.getElementsByClassName("Intuit").classList.add('b');
+	document.getElementsByClassName("Microsoft").classList.add('c');
+	document.getElementsByClassName("Lenovo").classList.add('d');
+	document.getElementsByClassName("Meta").classList.add('e');
+	document.getElementsByClassName("UDE").classList.add('f');
+
+
 } else if (header == '2') {
   document.getElementById('header').innerHTML = 'Mixed Methods Consumer Researcher';
   document.getElementById('tagline').innerHTML = 'a commercially oriented researcher combining qualitative research, quantitative methods, behavioral analytics, and advanced research science to help organizations understand what consumers need and what to do about it.';
@@ -1397,10 +1401,12 @@ if (header == '1') {
 	collection[i].classList.remove('w3-sand');
 	collection[i].classList.add('w3-pale-blue');
 	}
-  const priority = document.getElementsByClassName("Microsoft UDE");
-	for (let i = 0; i < priority.length; i++) {
-	priority[i].classList.add('a');
-	}
+  document.getElementsByClassName("Udacity").classList.add('f');
+	document.getElementsByClassName("Intuit").classList.add('e');
+	document.getElementsByClassName("Microsoft").classList.add('a');
+	document.getElementsByClassName("Lenovo").classList.add('c');
+	document.getElementsByClassName("Meta").classList.add('d');
+	document.getElementsByClassName("UDE").classList.add('b');
 } else if (header == '3') {
   document.getElementById('header').innerHTML = 'Mixed Methods User Researcher';
   document.getElementById('tagline').innerHTML = 'a mixed-methods user researcher. I bring a special expertise in how human experience is shaped and enriched by language, symbols, and designs.';
@@ -1409,10 +1415,12 @@ if (header == '1') {
 	collection[i].classList.remove('w3-sand');
 	collection[i].classList.add('w3-pale-blue');
 	}
-	const priority = document.getElementsByClassName("Intuit Lenovo");
-	for (let i = 0; i < priority.length; i++) {
-	priority[i].classList.add('a');
-	}
+  document.getElementsByClassName("Udacity").classList.add('b');
+	document.getElementsByClassName("Intuit").classList.add('a');
+	document.getElementsByClassName("Microsoft").classList.add('c');
+	document.getElementsByClassName("Lenovo").classList.add('d');
+	document.getElementsByClassName("Meta").classList.add('e');
+	document.getElementsByClassName("UDE").classList.add('f');
 } else if (header == '4') {
   document.getElementById('header').innerHTML = 'Data Journalist';
   document.getElementById('tagline').innerHTML = 'a data journalist';
