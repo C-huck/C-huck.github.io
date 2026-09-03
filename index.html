@@ -220,7 +220,7 @@ PORTFOLIO
 </div>
 
     <div class="w3-row flex">
-    <a href="javascript:void(0)" onclick="openCity(event, 'Microsoft','orange');" class="w3-third consumer product">
+    <a href="javascript:void(0)" onclick="openCity(event, 'Microsoft','orange');" class="w3-third consumer product Microsoft">
       <div class="w3-col tablink w3-bottombar w3-hover-light-grey w3-padding" style="white-space: nowrap; overflow: hidden; text-overflow: elipsis;"><b style="color:black">Microsoft</b><br>
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight2 highlight3">JTBD</div>
 		<div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight2 highlight3">Concept testing</div>
@@ -229,14 +229,14 @@ PORTFOLIO
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight2 highlight3">Mixed methods</div> 
 	  </div>
     </a>
-	<a href="javascript:void(0)" onclick="openCity(event, 'Universal','orange');" class="w3-third consumer">
+	<a href="javascript:void(0)" onclick="openCity(event, 'Universal','orange');" class="w3-third consumer UDE">
     <div class="w3-col tablink w3-bottombar w3-hover-light-grey w3-padding" style="white-space: nowrap; overflow: hidden; text-overflow: elipsis;"><b style="color:black">Universal Destinations & Experiences</b><br>
 	<div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight2">Softness </div>
 	<div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight2">Guest Satisfaction </div>
 	<div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight4">Data journalism </div>
 	</div>
     </a>
-	<a href="javascript:void(0)" onclick="openCity(event, 'Lenovo','orange');" class="w3-third consumer">
+	<a href="javascript:void(0)" onclick="openCity(event, 'Lenovo','orange');" class="w3-third consumer Lenovo">
       <div class="w3-col tablink w3-bottombar w3-hover-light-grey w3-padding" style="white-space: nowrap; overflow: hidden; text-overflow: elipsis;"><b style="color:black">Lenovo</b><br><span>
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight2 highlight3 highlight4">Message testing</div>
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight2 highlight3 highlight4">Message refinement</div>
@@ -244,7 +244,7 @@ PORTFOLIO
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag">Int'l research</div>
 	  </div>
     </a>
-	    <a href="javascript:void(0)" onclick="openCity(event, 'Meta','orange');" class="w3-third consumer">
+	    <a href="javascript:void(0)" onclick="openCity(event, 'Meta','orange');" class="w3-third consumer Meta">
       <div class="w3-col tablink w3-bottombar w3-hover-light-grey w3-padding" style="white-space: nowrap; overflow: hidden; text-overflow: elipsis;"><b style="color:black">Meta</b><br>
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight2 highlight3">Naming study</div>
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight2 highlight3">Microcopy evaluation</div> 
@@ -252,7 +252,7 @@ PORTFOLIO
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag">Int'l research</div>
 	  </div>
     </a>
-    <a href="javascript:void(0)" onclick="openCity(event, 'Intuit','orange');" class="w3-third ux product">
+    <a href="javascript:void(0)" onclick="openCity(event, 'Intuit','orange');" class="w3-third ux product Intuit">
       <div class="w3-col tablink w3-bottombar w3-hover-light-grey w3-padding" style="white-space: nowrap; overflow: hidden; text-overflow: elipsis;"><b style="color:black">Intuit / QuickBooks</b><br>
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight1">Product analytics</div> 
 		<div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight2 highlight3">Usability study</div>
@@ -260,7 +260,7 @@ PORTFOLIO
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight2 highlight1 highlight3">A/B Testing</div>
 	  </div>
     </a>
-	<a href="javascript:void(0)" onclick="openCity(event, 'Udacity','orange');" class="w3-third product">
+	<a href="javascript:void(0)" onclick="openCity(event, 'Udacity','orange');" class="w3-third product Udacity">
       <div class="w3-col tablink w3-bottombar w3-hover-light-grey w3-padding" style="white-space: nowrap; overflow: hidden; text-overflow: elipsis;"><b style="color:black">Udacity</b><br>
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight1">Product analytics</div> 
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight1">Time series</div>
@@ -1387,7 +1387,7 @@ if (header == '1') {
 	}
   const priority = document.getElementsByClassName("consumer");
 	for (let i = 0; i < priority.length; i++) {
-	collection[i].classList.add('a');
+	priority[i].classList.add('a');
 	}
 } else if (header == '2') {
   document.getElementById('header').innerHTML = 'Mixed Methods Consumer Researcher';
@@ -1399,7 +1399,7 @@ if (header == '1') {
 	}
   const priority = document.getElementsByClassName("consumer");
 	for (let i = 0; i < priority.length; i++) {
-	collection[i].classList.add('a');
+	priority[i].classList.add('a');
 	}
 } else if (header == '3') {
   document.getElementById('header').innerHTML = 'Mixed Methods User Researcher';
@@ -1411,7 +1411,7 @@ if (header == '1') {
 	}
 	const priority = document.getElementsByClassName("ux");
 	for (let i = 0; i < priority.length; i++) {
-	collection[i].classList.add('a');
+	priority[i].classList.add('a');
 	}
 } else if (header == '4') {
   document.getElementById('header').innerHTML = 'Data Journalist';
