@@ -415,3 +415,15 @@ div.desc {
   display: table;
   clear: both;
 }
+
+.flex {width:1; display: flex; flex-direction: row; flex: 1 1 0px; align-content: stretch;}
+.a { order: 1; }
+.b { order: 2; }
+.c { order: 3; }
+.d { order: 4; }
+.e { order: 5; }
+.f { order: 6; }
+
+.ux {}
+.product {}
+.consumer {}
