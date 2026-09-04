@@ -59,7 +59,7 @@
 At <span style="color:orange">STRAT7 Incite</span> I work on fabulously diverse projects for a managerie of clients. I delight in finding the right question...and then the right evidence to answer it.
 
 	I've helped Starbucks design a new ready-to-drink tea latte using a conjoint analysis; 
-	I've helped Lowe's understand their brand positioning with an implicit association test; 
+	I've helped Lowe's understand their brand positioning with an implicit association experiment; 
 	and I've helped Lenovo tailor their messaging strategy to target a new business segment with a mixed-methods program. <p></p>
 	<!-- Finding just the right methodology to address thorny problems is a passion of mine, as well as bringing to life complex data through compelling storytelling and visualizations.-->
 </div>
@@ -166,6 +166,7 @@ PORTFOLIO
     <div class="w3-row flex">
     <a href="javascript:void(0)" onclick="openCity(event, 'Microsoft','orange');" class="w3-third consumer product Microsoft">
       <div class="w3-col tablink w3-bottombar w3-hover-light-grey w3-padding" style="white-space: nowrap; overflow: hidden; text-overflow: elipsis;"><b style="color:black">Microsoft</b><br>
+		  <span id="tag_microsoft" class="w3-small">What should we build?</span><br>
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight2 highlight3">JTBD</div>
 		<div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight2 highlight3">Concept testing</div>
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight2 highlight3">Usability study</div>
@@ -175,13 +176,15 @@ PORTFOLIO
     </a>
 	<a href="javascript:void(0)" onclick="openCity(event, 'Universal','orange');" class="w3-third consumer UDE">
     <div class="w3-col tablink w3-bottombar w3-hover-light-grey w3-padding" style="white-space: nowrap; overflow: hidden; text-overflow: elipsis;"><b style="color:black">Universal Destinations & Experiences</b><br>
+	<span id="tag_ude" class="w3-small">What should the business prioritize?</span><br>
 	<div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight2">Softness </div>
 	<div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight2">Guest Satisfaction </div>
 	<div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight4">Data journalism </div>
 	</div>
     </a>
 	<a href="javascript:void(0)" onclick="openCity(event, 'Lenovo','orange');" class="w3-third consumer Lenovo">
-      <div class="w3-col tablink w3-bottombar w3-hover-light-grey w3-padding" style="white-space: nowrap; overflow: hidden; text-overflow: elipsis;"><b style="color:black">Lenovo</b><br><span>
+      <div class="w3-col tablink w3-bottombar w3-hover-light-grey w3-padding" style="white-space: nowrap; overflow: hidden; text-overflow: elipsis;"><b style="color:black">Lenovo</b><br>
+		  <span id="tag_lenovo" class="w3-small">How should we position our product?</span><br>
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight2 highlight3 highlight4">Message testing</div>
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight2 highlight3 highlight4">Message refinement</div>
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight2 highlight3">Mixed methods</div> 
@@ -190,6 +193,7 @@ PORTFOLIO
     </a>
 	    <a href="javascript:void(0)" onclick="openCity(event, 'Meta','orange');" class="w3-third consumer Meta">
       <div class="w3-col tablink w3-bottombar w3-hover-light-grey w3-padding" style="white-space: nowrap; overflow: hidden; text-overflow: elipsis;"><b style="color:black">Meta</b><br>
+		  <span id="tag_meta" class="w3-small">What should we name this?</span><br>
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight2 highlight3">Naming study</div>
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight2 highlight3">Microcopy evaluation</div> 
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight2 highlight3">Linguistic analysis</div>
@@ -198,6 +202,7 @@ PORTFOLIO
     </a>
     <a href="javascript:void(0)" onclick="openCity(event, 'Intuit','orange');" class="w3-third ux product Intuit">
       <div class="w3-col tablink w3-bottombar w3-hover-light-grey w3-padding" style="white-space: nowrap; overflow: hidden; text-overflow: elipsis;"><b style="color:black">Intuit / QuickBooks</b><br>
+		  <span id="tag_quickbooks" class="w3-small">How do users navigate our product architecture?</span><br>
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight1">Product analytics</div> 
 		<div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight2 highlight3">Usability study</div>
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight2 highlight3">Microcopy evaluation</div> 
@@ -206,6 +211,7 @@ PORTFOLIO
     </a>
 	<a href="javascript:void(0)" onclick="openCity(event, 'Udacity','orange');" class="w3-third product Udacity">
       <div class="w3-col tablink w3-bottombar w3-hover-light-grey w3-padding" style="white-space: nowrap; overflow: hidden; text-overflow: elipsis;"><b style="color:black">Udacity</b><br>
+		  <span id="tag_udacity" class="w3-small">What are users actually doing?</span><br>
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight1">Product analytics</div> 
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight1">Time series</div>
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight1">Segmentation</div>
@@ -235,10 +241,12 @@ PORTFOLIO
   Time series analysis &#9679;
   User segmentation / Personas &#9679;
   Social listening</b></p>
+	<div class="">
   <p><b>The Client:</b> <span style="color:purple">UDACITY</span></p>
   <p>A Massive Open Online Course program aspiring to make access to high quality coding and technology tutorials equitable and profitable</p>
   <p><b>My role:</b> The following exercise was completed as a take-home assignment for a job opportunity that ultimately resulted in a job offer. The analysis is based off the following publically available <a href="https://www.kaggle.com/datasets/austenmy/udacity-daily-engagement" target="_blank" class="w3-purple w3-hover-none" style="text-decoration: none;">dataset</a>. I performed all analyses, visualizations and storytelling.</p>
   <p><b>Timeline:</b> 1 week</p>
+	</div>
 
 <!--HEADERS 0th row-->
   <div style="display:inline-block;width:100%;border:1px;border-color:black; vertical-align:top; margin-right: 15px;">
@@ -247,7 +255,7 @@ PORTFOLIO
 
 	     <!--BODIES 0th row-->
   <div style="display:inline-block;width:100%;border:1px;border-color:black; vertical-align:top; margin-right: 15px;">
-  Revealed steady attrition of paid users and suggested (a) additional avenues of research to understand why and (b) several immediate interventions to try to keep paid users on the platform. Revealed targetable additional user segments.
+  Revealed steady attrition of paid users and suggested (a) additional avenues of research to understand why and (b) several immediate interventions to try to keep paid users on the platform. Revealed  additional targetable user segments.
   </div>
  
  <!--HEADERS 1st row-->
@@ -804,7 +812,17 @@ Qual discussion guide development
   <p class='justified'><b>The Client:</b> <span style="color:grey">UNIVERSAL DESTINATIONS & EXPERIENCES</span></p>
   <p>Events, Operations, Marketing and other interested parties at the company holding all US-based Universal theme parks</p>
   <p><b>My role:</b> Individual contributor (I performed all analyses, visualizations and storytelling)</p>
- 
+
+	  	   <!--HEADERS 0th row-->
+  <div style="display:inline-block;width:100%;border:1px;border-color:black; vertical-align:top; margin-right: 15px;">
+  <p><b>00<br>Result</b></p>
+  </div>
+
+	     <!--BODIES 0th row-->
+  <div style="display:inline-block;width:100%;border:1px;border-color:black; vertical-align:top; margin-right: 15px;">
+	  Delivered a comprehensive executive memo and report detailing why former guests were not attending the Parks' biggest annual event, Halloween Horror Nights (HHN). Report identified several ways to mitigate attendance issues that are within the business's scope. Report quantified negative "buzz" unearthed by our social listening team, preventing an anxious stakeholder team from wasting money on incomplete information. 
+  </div>
+	  
  <!--HEADERS 1st row-->
    <div style="display:inline-block;width:45%;border:2px;border-color:black; vertical-align:bottom; margin-right: 15px;">
   <p><b>01<br>Context</b></p>
@@ -1321,25 +1339,37 @@ function getUrlParameter(sParam)
 
 var header = getUrlParameter('a');
 
+	/* DATA SCIENCE & PRODUCT ANALYTICS */
 if (header == '1') {
   document.getElementById('header').innerHTML = 'Product Data Scientist / Product Analyst';
   document.getElementById('tagline').innerHTML = 'a data scientist specializing in product analytics and human behavior. I turn messy behavioral data and ambiguous business questions into evidence teams can act on.';
 	document.getElementById('projectFocus').innerHTML = 'Udacity and Intuit / QuickBooks';
-	document.getElementById('researchPitch').innerHTML = 'I start with the decision, not the dataset. I use behavioral data to understand what people actually do, quantitative analysis to measure and prioritize opportunities, and qualitative research to understand the motivations behind those behaviors. I integrate those perspectives to help product and business teams make better decisions.'
+	document.getElementById('researchPitch').innerHTML = 'I start with the decision, not the dataset. I use behavioral data to understand what people actually do, quantitative analysis to measure and prioritize opportunities, and qualitative research to understand the motivations behind those behaviors. I integrate those perspectives to help pgroduct and business teams make better decisions.'
   const collection = document.getElementsByClassName("highlight1");
 	for (let i = 0; i < collection.length; i++) {
 	collection[i].classList.remove('w3-sand');
 	collection[i].classList.add('w3-pale-blue');
 	}
-  document.getElementsByClassName("Udacity")[0].classList.add('a');
+	//order of projects
+  	document.getElementsByClassName("Udacity")[0].classList.add('a');
 	document.getElementsByClassName("Intuit")[0].classList.add('b');
 	document.getElementsByClassName("Microsoft")[0].classList.add('c');
 	document.getElementsByClassName("Lenovo")[0].classList.add('d');
 	document.getElementsByClassName("Meta")[0].classList.add('e');
-	document.getElementsByClassName("UDE")[0].classList.add('f');
-	  document.getElementsByClassName("academic")[0].classList.add('a');
-	  document.getElementsByClassName("presentations")[0].classList.add('b');
-	  document.getElementsByClassName("professional")[0].classList.add('c');
+	document.getElementsByClassName("UDE")[0].classList.add('f'); 
+	//order of writing section
+	document.getElementsByClassName("academic")[0].classList.add('a');
+	document.getElementsByClassName("presentations")[0].classList.add('b');
+	document.getElementsByClassName("professional")[0].classList.add('c');
+	//project tab taglines
+	document.getElementById('tag_microsoft').innerHTML = "What should we build?"
+	document.getElementById('tag_lenovo').innerHTML = "How should we position our product?"
+	document.getElementById('tag_udacity').innerHTML = "What are users actually doing?"
+	document.getElementById('tag_ude').innerHTML = "What should the business prioritize?"
+	document.getElementById('tag_quickbooks').innerHTML = "How do users navigate a product architecture?"
+	document.getElementById('tag_meta').innerHTML = "What should we name this?"
+
+	/* CONSUMER */
 } else if (header == '2') {
   document.getElementById('header').innerHTML = 'Mixed Methods Consumer Researcher';
   document.getElementById('tagline').innerHTML = 'a commercially oriented researcher combining qualitative research, quantitative methods, behavioral analytics, and advanced research science to help organizations understand what consumers need and what to do about it.';
@@ -1349,20 +1379,37 @@ document.getElementById('projectFocus').innerHTML = 'Microsoft and Universal Des
 	collection[i].classList.remove('w3-sand');
 	collection[i].classList.add('w3-pale-blue');
 	}
-  document.getElementsByClassName("Udacity")[0].classList.add('f');
+	//project order
+  	document.getElementsByClassName("Udacity")[0].classList.add('f');
 	document.getElementsByClassName("Intuit")[0].classList.add('e');
 	document.getElementsByClassName("Microsoft")[0].classList.add('a');
 	document.getElementsByClassName("Lenovo")[0].classList.add('c');
 	document.getElementsByClassName("Meta")[0].classList.add('d');
 	document.getElementsByClassName("UDE")[0].classList.add('b');
-		  document.getElementsByClassName("academic")[0].classList.add('b');
-	  document.getElementsByClassName("presentations")[0].classList.add('c');
-	  document.getElementsByClassName("professional")[0].classList.add('a');
+	//writing order
+	document.getElementsByClassName("academic")[0].classList.add('b');
+	document.getElementsByClassName("presentations")[0].classList.add('c');
+	document.getElementsByClassName("professional")[0].classList.add('a');
+	//project tab taglines
+	document.getElementById('tag_microsoft').innerHTML = "Finding the right questions to ask"
+	document.getElementById('tag_lenovo').innerHTML = "Reaching new customers with the right language"
+	document.getElementById('tag_udacity').innerHTML = "Identifying churn through user behavior"
+	document.getElementById('tag_ude').innerHTML = "Balancing consumer needs with business realities"
+	document.getElementById('tag_quickbooks').innerHTML = "Finding the right tool for the job"
+	document.getElementById('tag_meta').innerHTML = "Making a tough call"
+	
+	/* UXR */
 } else if (header == '3') {
   document.getElementById('header').innerHTML = 'Mixed Methods User Researcher';
   document.getElementById('tagline').innerHTML = 'a mixed-methods user researcher. I bring a special expertise in how human experience is shaped and enriched by language, symbols, and designs.';
 	document.getElementById('projectFocus').innerHTML = 'Intuit / Quickbooks, Udacity, and Microsoft';
 	document.getElementById('researchPitch').innerHTML = 'I start by understanding the product decision and the people affected by it. I use qualitative research to uncover needs, motivations, and unmet problems, quantitative research to measure prevalence and prioritize opportunities, and behavioral data to understand what people actually do. I integrate these perspectives to give product teams a clear understanding of what users need and why.'
+document.getElementById('tag_microsoft').innerHTML = "Which product opportunities matter most?"
+	document.getElementById('tag_lenovo').innerHTML = "What language meets users where they're at?"
+	document.getElementById('tag_udacity').innerHTML = "How do users actually behave?"
+	document.getElementById('tag_ude').innerHTML = "What should the organization change?"
+	document.getElementById('tag_quickbooks').innerHTML = "Can users successfully navigate the experience?"
+	document.getElementById('tag_meta').innerHTML = "What should we name this?"
   const collection = document.getElementsByClassName("highlight3");
 	for (let i = 0; i < collection.length; i++) {
 	collection[i].classList.remove('w3-sand');
@@ -1374,9 +1421,11 @@ document.getElementById('projectFocus').innerHTML = 'Microsoft and Universal Des
 	document.getElementsByClassName("Lenovo")[0].classList.add('e');
 	document.getElementsByClassName("Meta")[0].classList.add('c');
 	document.getElementsByClassName("UDE")[0].classList.add('f');
-		  document.getElementsByClassName("academic")[0].classList.add('a');
-	  document.getElementsByClassName("presentations")[0].classList.add('b');
-	  document.getElementsByClassName("professional")[0].classList.add('c');
+	document.getElementsByClassName("academic")[0].classList.add('a');
+	document.getElementsByClassName("presentations")[0].classList.add('b');
+	document.getElementsByClassName("professional")[0].classList.add('c');
+
+	/* DATA JOURNALISM */
 } else if (header == '4') {
   document.getElementById('header').innerHTML = 'Data Journalist';
   document.getElementById('tagline').innerHTML = 'a data journalist';
@@ -1385,6 +1434,8 @@ document.getElementById('projectFocus').innerHTML = 'Microsoft and Universal Des
 	collection[i].classList.remove('w3-sand');
 	collection[i].classList.add('w3-pale-blue');
 	}
+
+	/* ELSE */
 } else {  
   document.getElementById('header').innerHTML = 'Data Science & Consumer Behavior';
   document.getElementById('tagline').innerHTML = 'a data scientist and consumer researcher. I help people understand and act on data.';
