@@ -235,7 +235,7 @@ PORTFOLIO
 
   </div>
   <div style="width:60%;display:inline-block;margin:auto;" class="justified">
-  <b style="font-size:30px;text-decoration: underline purple;"> User reactions to business model changes </b>
+  <b style="font-size:30px;text-decoration: underline purple;"><span id="headline_udacity">User reactions to business model changes</span></b>
   <p><b style="color:purple", class="justified">
   Digital platform usage stats &#9679;
   Time series analysis &#9679;
@@ -341,7 +341,7 @@ PORTFOLIO
 
   </div>
   <div style="width:60%;display:inline-block;margin:auto;">
-  <b style="font-size:30px;text-decoration: underline blue;"> Quantitative brand architecture validation
+  <b style="font-size:30px;text-decoration: underline blue;"><span id="headline_quickbooks">Quantitative brand architecture validation</span>
  </b>
   <p class='justified'><b style="color:blue", class="justified">
   Usability testing &#9679;
@@ -438,7 +438,6 @@ PORTFOLIO
 <!-- END PROJECT TWO-->
 
 <!-- PROJECT THREE-->
-<!-- PROJECT THREE-->
 
 <div id="Microsoft" class="w3-container portfolio" style="display:none">
 <div class="w3-container" style="padding-top:10px!important;margin:auto;">
@@ -450,7 +449,7 @@ PORTFOLIO
 	<p>>><a href="pdfs/Bradley_Portfolio_Microsoft.pdf" target="_blank" class="w3-red w3-hover-none" style="text-decoration: none;">Download</a> case study</p>
 	</div>
   <div style="width:60%;display:inline-block;margin:auto;">
-  <b style="font-size:30px;text-decoration: underline red;"> Finding the question behind the question<!--Mixed methods concept testing of an in-browser AI tool-->
+  <b style="font-size:30px;text-decoration: underline red;"><span id="headline_microsoft">Finding the question behind the question</span><!--Mixed methods concept testing of an in-browser AI tool-->
  </b>
   <p class='justified'><b style="color:red", class="justified">
   Concept testing &#9679;
@@ -573,7 +572,7 @@ While my team offered long-tail support on this project, the User Manual allowed
 	<p>>><a href="pdfs/Bradley_Portfolio_Lenovo.pdf" target="_blank" class="w3-green w3-hover-none" style="text-decoration: none;">Download</a> case study</p>
 	</div>
   <div style="width:60%;display:inline-block;margin:auto;">
-  <b style="font-size:30px;text-decoration: underline green;"> Mixed methods message testing for new marketing strategy </b>
+  <b style="font-size:30px;text-decoration: underline green;"><span id="headline_lenovo">Mixed methods message testing for new marketing strategy</span> </b>
   <p class='justified'><b style="color:green", class="justified">
   Mixed methods message testing &#9679;
   Data-informed message refinement
@@ -684,7 +683,7 @@ While my team offered long-tail support on this project, the User Manual allowed
 	<p>>><a href="pdfs/Bradley_Portfolio_Meta.pdf" target="_blank" class="w3-orange w3-hover-none" style="text-decoration: none;">Download</a> case study</p>
 	</div>
   <div style="width:60%;display:inline-block;margin:auto;">
-  <b style="font-size:30px;text-decoration: underline orange;"> Naming a new digital assistant </b>
+  <b style="font-size:30px;text-decoration: underline orange;"><span id="headline_meta">Naming a new digital assistant</span></b>
   <p class='justified'><b style="color:orange", class="justified">
   Naming study &#9679;
   Quantitative survey &#9679;
@@ -804,7 +803,7 @@ Qual discussion guide development
 
   </div>
   <div style="width:60%;display:inline-block;margin:auto;">
-  <b style="font-size:30px;text-decoration: underline grey;"> Turning consumer preferences into priorities <!--Understanding declining attendance to the biggest event of the year --> </b>
+  <b style="font-size:30px;text-decoration: underline grey;"><span id="headline_ude">Turning consumer preferences into priorities </span><!--Understanding declining attendance to the biggest event of the year --> </b>
   <p class='justified'><b style="color:grey", class="justified">
   Guest satisfaction &#9679;
   Competitive analysis &#9679;
@@ -1344,7 +1343,7 @@ if (header == '1') {
   document.getElementById('header').innerHTML = 'Product Data Scientist / Product Analyst';
   document.getElementById('tagline').innerHTML = 'a data scientist specializing in product analytics and human behavior. I turn messy behavioral data and ambiguous business questions into evidence teams can act on.';
 	document.getElementById('projectFocus').innerHTML = 'Udacity and Intuit / QuickBooks';
-	document.getElementById('researchPitch').innerHTML = 'I start with the decision, not the dataset. I use behavioral data to understand what people actually do, quantitative analysis to measure and prioritize opportunities, and qualitative research to understand the motivations behind those behaviors. I integrate those perspectives to help pgroduct and business teams make better decisions.'
+	document.getElementById('researchPitch').innerHTML = 'I start with the decision, not the dataset. I use behavioral data to understand what people actually do, quantitative analysis to measure and prioritize opportunities, and qualitative research to understand the motivations behind those behaviors. I integrate those perspectives to help product and business teams make better decisions.'
   const collection = document.getElementsByClassName("highlight1");
 	for (let i = 0; i < collection.length; i++) {
 	collection[i].classList.remove('w3-sand');
@@ -1368,6 +1367,13 @@ if (header == '1') {
 	document.getElementById('tag_ude').innerHTML = "What should the business prioritize?"
 	document.getElementById('tag_quickbooks').innerHTML = "How do users navigate a product architecture?"
 	document.getElementById('tag_meta').innerHTML = "What should we name this?"
+	//project positioning - headlines
+	document.getElementById('headline_microsoft').innerHTML = "What should we build?"
+	document.getElementById('headline_lenovo').innerHTML = "How should we position our product?"
+	document.getElementById('headline_udacity').innerHTML = "What are users actually doing?"
+	document.getElementById('headline_ude').innerHTML = "What should the business prioritize?"
+	document.getElementById('headline_quickbooks').innerHTML = "How do users navigate a product architecture?"
+	document.getElementById('headline_meta').innerHTML = "What should we name this?"
 
 	/* CONSUMER */
 } else if (header == '2') {
@@ -1391,12 +1397,19 @@ document.getElementById('projectFocus').innerHTML = 'Microsoft and Universal Des
 	document.getElementsByClassName("presentations")[0].classList.add('c');
 	document.getElementsByClassName("professional")[0].classList.add('a');
 	//project tab taglines
-	document.getElementById('tag_microsoft').innerHTML = "Finding the right questions to ask"
+	document.getElementById('tag_microsoft').innerHTML = "Finding the question behind the question"
 	document.getElementById('tag_lenovo').innerHTML = "Reaching new customers with the right language"
 	document.getElementById('tag_udacity').innerHTML = "Identifying churn through user behavior"
 	document.getElementById('tag_ude').innerHTML = "Balancing consumer needs with business realities"
 	document.getElementById('tag_quickbooks').innerHTML = "Finding the right tool for the job"
 	document.getElementById('tag_meta').innerHTML = "Making a tough call"
+	//project positioning - headlines
+	document.getElementById('headline_microsoft').innerHTML = "Turning an ambiguous product question into a user-centered product roadmap"
+	document.getElementById('headline_lenovo').innerHTML = "Understanding what matters to business users and turning it into a compelling proposition"
+	document.getElementById('headline_udacity').innerHTML = "What can behavioral data tell us about how users actually engage with a product?"
+	document.getElementById('headline_ude').innerHTML = "Turning conflicting customer needs into actionable experience priorities"
+	document.getElementById('headline_quickbooks').innerHTML = "Using behavioral research to improve product information architecture"
+	document.getElementById('headline_meta').innerHTML = "Finding a voice interaction global users can recognize, pronounce, and embrace"
 	
 	/* UXR */
 } else if (header == '3') {
@@ -1415,15 +1428,24 @@ document.getElementById('tag_microsoft').innerHTML = "Which product opportunitie
 	collection[i].classList.remove('w3-sand');
 	collection[i].classList.add('w3-pale-blue');
 	}
-  document.getElementsByClassName("Udacity")[0].classList.add('d');
+	//Project order
+  	document.getElementsByClassName("Udacity")[0].classList.add('d');
 	document.getElementsByClassName("Intuit")[0].classList.add('b');
 	document.getElementsByClassName("Microsoft")[0].classList.add('a');
 	document.getElementsByClassName("Lenovo")[0].classList.add('e');
 	document.getElementsByClassName("Meta")[0].classList.add('c');
 	document.getElementsByClassName("UDE")[0].classList.add('f');
+	//writing order
 	document.getElementsByClassName("academic")[0].classList.add('a');
 	document.getElementsByClassName("presentations")[0].classList.add('b');
 	document.getElementsByClassName("professional")[0].classList.add('c');
+	//project positioning - headlines
+	document.getElementById('headline_microsoft').innerHTML = "Turning an ambiguous product question into a user-centered product roadmap"
+	document.getElementById('headline_lenovo').innerHTML = "Understanding what matters to business users and turning it into a compelling proposition"
+	document.getElementById('headline_udacity').innerHTML = "What can behavioral data tell us about how users actually engage with a product?"
+	document.getElementById('headline_ude').innerHTML = "Turning conflicting customer needs into actionable experience priorities"
+	document.getElementById('headline_quickbooks').innerHTML = "Using behavioral research to improve product information architecture"
+	document.getElementById('headline_meta').innerHTML = "Finding a voice interaction global users can recognize, pronounce, and embrace"
 
 	/* DATA JOURNALISM */
 } else if (header == '4') {
@@ -1439,7 +1461,13 @@ document.getElementById('tag_microsoft').innerHTML = "Which product opportunitie
 } else {  
   document.getElementById('header').innerHTML = 'Data Science & Consumer Behavior';
   document.getElementById('tagline').innerHTML = 'a data scientist and consumer researcher. I help people understand and act on data.';
-		document.getElementById('projectFocus').innerHTML = 'Universal Destinations and Experiences';
+document.getElementById('projectFocus').innerHTML = 'Universal Destinations and Experiences';
+		document.getElementById('headline_microsoft').innerHTML = "Turning an ambiguous product question into a user-centered product roadmap"
+	document.getElementById('headline_lenovo').innerHTML = "Understanding what matters to business users and turning it into a compelling proposition"
+	document.getElementById('headline_udacity').innerHTML = "What can behavioral data tell us about how users actually engage with a product?"
+	document.getElementById('headline_ude').innerHTML = "Turning conflicting customer needs into actionable experience priorities"
+	document.getElementById('headline_quickbooks').innerHTML = "Using behavioral research to improve product information architecture"
+	document.getElementById('headline_meta').innerHTML = "Finding a voice interaction global users can recognize, pronounce, and embrace"
 
 }
 
