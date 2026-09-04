@@ -888,21 +888,21 @@ Qual discussion guide development
 
 
 
-<div class="w3-row">
-	<a href="javascript:void(0)" onclick="openCity(event, 'Professional','orange');">
-      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding"><b style="color:black">Professional writing</b><br>
+<div class="w3-row flex">
+	<a href="javascript:void(0)" onclick="openCity(event, 'Professional','orange');"  class="w3-third professional">
+      <div class="w3-col tablink w3-bottombar w3-hover-light-grey w3-padding"><b style="color:black">Professional writing</b><br>
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight2 highlight3 highlight4">Reports</div>
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight2 highlight4">Blogs</div>
 	  </div>
     </a>
-    <a href="javascript:void(0)" onclick="openCity(event, 'Publications','orange');">
-      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding"><b style="color:black">Publications</b><br>
+    <a href="javascript:void(0)" onclick="openCity(event, 'Publications','orange');" class="w3-third academic">
+      <div class="w3-col tablink w3-bottombar w3-hover-light-grey w3-padding"><b style="color:black">Publications</b><br>
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight1 highlight2 highlight3 highlight4">Academic journals</div>
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight1">Dissertation and Theses</div>
 	  </div>
     </a>
-    <a href="javascript:void(0)" onclick="openCity(event, 'Presentations','orange');">
-      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding"><b style="color:black">Presentations</b><br>
+    <a href="javascript:void(0)" onclick="openCity(event, 'Presentations','orange');" class="w3-third presentations">
+      <div class="w3-col tablink w3-bottombar w3-hover-light-grey w3-padding"><b style="color:black">Presentations</b><br>
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight1 highlight2 highlight3 highlight4">Talks</div>
 	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight1 highlight2 highlight3 highlight4">Posters</div>
 	  </div>
@@ -1337,8 +1337,9 @@ if (header == '1') {
 	document.getElementsByClassName("Lenovo")[0].classList.add('d');
 	document.getElementsByClassName("Meta")[0].classList.add('e');
 	document.getElementsByClassName("UDE")[0].classList.add('f');
-
-
+	  document.getElementsByClassName("academic")[0].classList.add('a');
+	  document.getElementsByClassName("presentations")[0].classList.add('b');
+	  document.getElementsByClassName("professional")[0].classList.add('c');
 } else if (header == '2') {
   document.getElementById('header').innerHTML = 'Mixed Methods Consumer Researcher';
   document.getElementById('tagline').innerHTML = 'a commercially oriented researcher combining qualitative research, quantitative methods, behavioral analytics, and advanced research science to help organizations understand what consumers need and what to do about it.';
@@ -1354,6 +1355,9 @@ document.getElementById('projectFocus').innerHTML = 'Microsoft and Universal Des
 	document.getElementsByClassName("Lenovo")[0].classList.add('c');
 	document.getElementsByClassName("Meta")[0].classList.add('d');
 	document.getElementsByClassName("UDE")[0].classList.add('b');
+		  document.getElementsByClassName("academic")[0].classList.add('b');
+	  document.getElementsByClassName("presentations")[0].classList.add('c');
+	  document.getElementsByClassName("professional")[0].classList.add('a');
 } else if (header == '3') {
   document.getElementById('header').innerHTML = 'Mixed Methods User Researcher';
   document.getElementById('tagline').innerHTML = 'a mixed-methods user researcher. I bring a special expertise in how human experience is shaped and enriched by language, symbols, and designs.';
@@ -1370,6 +1374,9 @@ document.getElementById('projectFocus').innerHTML = 'Microsoft and Universal Des
 	document.getElementsByClassName("Lenovo")[0].classList.add('d');
 	document.getElementsByClassName("Meta")[0].classList.add('e');
 	document.getElementsByClassName("UDE")[0].classList.add('f');
+		  document.getElementsByClassName("academic")[0].classList.add('a');
+	  document.getElementsByClassName("presentations")[0].classList.add('b');
+	  document.getElementsByClassName("professional")[0].classList.add('c');
 } else if (header == '4') {
   document.getElementById('header').innerHTML = 'Data Journalist';
   document.getElementById('tagline').innerHTML = 'a data journalist';
