@@ -153,9 +153,9 @@ PORTFOLIO
 <!--END POPUP-->
 
 <div class="w3-container w3-padding-16" id="portfolio" >
-  <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="color:orange">How I solve consumer problems</h2>
+  <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="color:orange">Problem-solving technique</h2>
   <!--<p>I've been fortunate to work on a lot of different kinds of problems in my career, from naming to guest satisfaction to choice modeling, but one common thread unites: I love finding (or developing!) the right tool for the job and  </p>-->
-	<p>Over my career, I've repeatedly encountered ambiguous questions about consumers, products, brands, and experiences. I start with the decision, not the methodology. I use qualitative research to understand the consumer, quantitative research to measure and prioritize what matters, and behavioral data when it can reveal what people actually do. I integrate those perspectives to produce recommendations a business can act on.  I've taken a consultative approach throughout, ensuring that executives and stakeholders understand what they have, what they can get, and how they can act on that opportunity effectively.
+	<p>Over my career, I've repeatedly encountered ambiguous questions about consumers, products, brands, and experiences. <span id="researchPitch">I start with the decision, not the methodology. I use qualitative research to understand the consumer, quantitative research to measure and prioritize what matters, and behavioral data when it can reveal what people actually do. I integrate those perspectives to produce recommendations a business can act on.  I've taken a consultative approach throughout, ensuring that executives and stakeholders understand what they have, what they can get, and how they can act on that opportunity effectively.</span>
 		
 		<!--I've figured out what needs to be understood, combined the right methods to understand it, and translated the resulting evidence into decisions. I've taken a consultative approach throughout, ensuring that executives and stakeholders understand what they have, what they can get, and how they can act on that opportunity effectively.--></p>
   <p>You can <a href="pdfs/Bradley_Portfolio.pdf" target="_blank" class="w3-amber w3-hover-none" style="text-decoration: none;">Download</a> my whole portfolio (Updated: Summer 2026). Or, simply select a project below.</p>
@@ -1323,9 +1323,10 @@ function getUrlParameter(sParam)
 var header = getUrlParameter('a');
 
 if (header == '1') {
-  document.getElementById('header').innerHTML = 'Data Scientist';
-  document.getElementById('tagline').innerHTML = 'a data scientist and behavioralist. I help people understand and act on data.';
+  document.getElementById('header').innerHTML = 'Product Data Scientist / Product Analyst';
+  document.getElementById('tagline').innerHTML = 'a data scientist specializing in product analytics and human behavior. I turn messy behavioral data and ambiguous business questions into evidence teams can act on.';
 	document.getElementById('projectFocus').innerHTML = 'Udacity and Intuit / QuickBooks';
+	document.getElementById('researchPitch').innerHTML = 'I start with the decision, not the dataset. I use behavioral data to understand what people actually do, quantitative analysis to measure and prioritize opportunities, and qualitative research to understand the motivations behind those behaviors. I integrate those perspectives to help product and business teams make better decisions.'
   const collection = document.getElementsByClassName("highlight1");
 	for (let i = 0; i < collection.length; i++) {
 	collection[i].classList.remove('w3-sand');
@@ -1358,7 +1359,7 @@ document.getElementById('projectFocus').innerHTML = 'Microsoft and Universal Des
   document.getElementById('header').innerHTML = 'Mixed Methods User Researcher';
   document.getElementById('tagline').innerHTML = 'a mixed-methods user researcher. I bring a special expertise in how human experience is shaped and enriched by language, symbols, and designs.';
 	document.getElementById('projectFocus').innerHTML = 'Intuit / Quickbooks, Udacity, and Microsoft';
-
+	document.getElementById('researchPitch').innerHTML = 'I start with the decision, not the dataset. I use behavioral data to understand what people actually do, quantitative analysis to measure and prioritize opportunities, and qualitative research to understand the motivations behind those behaviors. I integrate those perspectives to help create joyous experiences for end users.'
   const collection = document.getElementsByClassName("highlight3");
 	for (let i = 0; i < collection.length; i++) {
 	collection[i].classList.remove('w3-sand');
