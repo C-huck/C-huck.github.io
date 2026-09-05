@@ -166,12 +166,7 @@ PORTFOLIO
     <div class="w3-row flex">
     <a href="javascript:void(0)" onclick="openCity(event, 'Microsoft','orange');" class="w3-third consumer product Microsoft">
       <div class="w3-col tablink w3-bottombar w3-hover-light-grey w3-padding" style="white-space: nowrap; overflow: hidden; text-overflow: elipsis;"><b style="color:black">Microsoft</b><br>
-		  <span id="tag_microsoft" class="w3-small">What should we build?</span><br>
-	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight2 highlight3">JTBD</div>
-		<div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight2 highlight3">Concept testing</div>
-	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight2 highlight3">Usability study</div>
-	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight1 highlight3">Feature prioritization</div>
-	  <div class="w3-sand w3-round-xxlarge w3-small w3-tag highlight2 highlight3">Mixed methods</div> 
+		  <span id="tag_microsoft" class="w3-small">What should we build?</span>
 	  </div>
     </a>
 	<a href="javascript:void(0)" onclick="openCity(event, 'Universal','orange');" class="w3-third consumer UDE">
@@ -452,10 +447,14 @@ PORTFOLIO
   <b style="font-size:30px;text-decoration: underline red;"><span id="headline_microsoft">Finding the question behind the question</span><!--Mixed methods concept testing of an in-browser AI tool-->
  </b>
   <p class='justified'><b style="color:red", class="justified">
-  Concept testing &#9679;
-  Quantitative Survey &#9679;
-  MaxDiff &#9679;
-  In-depth Interviews  &#9679; Usability study</b></p>
+	  <div class="w3-sand w3-round-xxlarge  w3-tag highlight2 highlight3">JTBD</div>
+		<div class="w3-sand w3-round-xxlarge  w3-tag highlight2 highlight3">Concept testing</div>
+	  <div class="w3-sand w3-round-xxlarge  w3-tag highlight2 highlight3">Usability study</div>
+	  <div class="w3-sand w3-round-xxlarge  w3-tag highlight1 highlight3">Feature prioritization</div>
+	  <div class="w3-sand w3-round-xxlarge  w3-tag highlight2 highlight3">Mixed methods</div> 
+	  <div class="w3-sand w3-round-xxlarge  w3-tag highlight2 highlight3">MaxDiff</div>
+	  <div class="w3-sand w3-round-xxlarge  w3-tag highlight2 highlight3">In-depth Interviews</div>
+</p>
   <p class='justified'><b>The Client:</b> <span style="color:red">Microsoft / Copilot</span></p>
   <p>A Senior Project Manager implementing new in-browser AI tools for a major internet browser for a Fortune 10 tech company</p>
   <p><b>My role:</b> Quantitative survey development, Quantitative data analysis, Vendor management (survey panel)
@@ -1368,12 +1367,12 @@ if (header == '1') {
 	document.getElementById('tag_quickbooks').innerHTML = "How do users navigate a product architecture?"
 	document.getElementById('tag_meta').innerHTML = "What should we name this?"
 	//project positioning - headlines
-	document.getElementById('headline_microsoft').innerHTML = "What should we build?"
-	document.getElementById('headline_lenovo').innerHTML = "How should we position our product?"
-	document.getElementById('headline_udacity').innerHTML = "What are users actually doing?"
-	document.getElementById('headline_ude').innerHTML = "What should the business prioritize?"
-	document.getElementById('headline_quickbooks').innerHTML = "How do users navigate a product architecture?"
-	document.getElementById('headline_meta').innerHTML = "What should we name this?"
+	document.getElementById('headline_microsoft').innerHTML = "Turning an ambiguous product question into a feature roadmap"
+	document.getElementById('headline_lenovo').innerHTML = "Measuring what matters to a new user segment"
+	document.getElementById('headline_udacity').innerHTML = "Measuring how a product change affected user behavior"
+	document.getElementById('headline_ude').innerHTML = "Using behavioral research to identify experience priorities"
+	document.getElementById('headline_quickbooks').innerHTML = "Designing behavioral metrics to improve product navigation"
+	document.getElementById('headline_meta').innerHTML = "Optimizing a voice interface for global users"
 
 	/* CONSUMER */
 } else if (header == '2') {
