@@ -171,27 +171,27 @@ the case studies for <span style="color:orange;font-weight:bold">Microsoft</span
 
 
     <div class="w3-row flex">
-    <a href="javascript:void(0)" onclick="openCity(event, 'Microsoft','orange');" class="w3-third consumer product Microsoft">
+    <a href="javascript:void(0)" onclick="openCity(event, 'Microsoft','red');" class="w3-third consumer product Microsoft">
       <div title="Critical consulting: Finding the question behind the question" class="w3-col tablink w3-bottombar w3-hover-light-grey w3-padding" style="white-space: nowrap; overflow: hidden; text-overflow: elipsis;"><b style="color:black">Microsoft</b><br>
 		  <span id="tag_microsoft" class="">Critical consulting: Finding the question behind the question</span>
 	  </div>
     </a>
-		<a href="javascript:void(0)" onclick="openCity(event, 'Universal','orange');" class="w3-third consumer UDE">
+		<a href="javascript:void(0)" onclick="openCity(event, 'Universal','grey');" class="w3-third consumer UDE">
     <div title="VoC: Balancing consumer needs with business realities" class="w3-col tablink w3-bottombar w3-hover-light-grey w3-padding" style="white-space: nowrap; overflow: hidden; text-overflow: elipsis;"><b style="color:black">Universal Destinations & Experiences</b><br>
 	<span id="tag_ude" class="">VoC: Balancing consumer needs with business realities</span>
 	</div>
     </a>
-	<a href="javascript:void(0)" onclick="openCity(event, 'Lenovo','orange');" class="w3-third consumer Lenovo">
+	<a href="javascript:void(0)" onclick="openCity(event, 'Lenovo','green');" class="w3-third consumer Lenovo">
       <div title="Sending a message: Reaching new customers with the right language" class="w3-col tablink w3-bottombar w3-hover-light-grey w3-padding" style="white-space: nowrap; overflow: hidden; text-overflow: elipsis;"><b style="color:black">Lenovo</b><br>
 		  <span id="tag_lenovo" class="">Sending a message: Reaching new customers with the right language</span>
 	  </div>
     </a>
-      <a href="javascript:void(0)" onclick="openCity(event, 'Intuit','orange');" class="w3-third ux product Intuit">
+      <a href="javascript:void(0)" onclick="openCity(event, 'Intuit','blue');" class="w3-third ux product Intuit">
       <div title="Methodology matters: Finding the right tool for the job" class="w3-col tablink w3-bottombar w3-hover-light-grey w3-padding" style="white-space: nowrap; overflow: hidden; text-overflow: elipsis;"><b style="color:black">Intuit / QuickBooks</b><br>
 		  <span id="tag_quickbooks" class="">Methodology matters: Finding the right tool for the job</span>
 	  </div>
     </a>
-      <a href="javascript:void(0)" onclick="openCity(event, 'Udacity','orange');" class="w3-third product Udacity">
+      <a href="javascript:void(0)" onclick="openCity(event, 'Udacity','purple');" class="w3-third product Udacity">
       <div title="Strange behavior: Identifying churn through user behavior" class="w3-col tablink w3-bottombar w3-hover-light-grey w3-padding" style="white-space: nowrap; overflow: hidden; text-overflow: elipsis;"><b style="color:black">Udacity</b><br>
 		  <span id="tag_udacity" class="">Strange behavior: Identifying churn through user behavior</span>
 	  </div>
@@ -1449,7 +1449,7 @@ function openCity(evt, cityName,color) {
   }
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" w3-border-"+color, "");
+    tablinks[i].className = tablinks[i].className.replace(/w3\-border.*/, "");
   }
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.firstElementChild.className += " w3-border-"+color;
